@@ -1,3 +1,3 @@
-fun main(args: Array<String>) {
-    println("Hello World !")
+fun firstPuzzle(freqs: Array<Int>): Int {
+    return(freqs.sum())
 }
