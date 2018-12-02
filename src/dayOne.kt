@@ -4,10 +4,10 @@ fun firstPuzzle(freqs: Array<Int>) = freqs.sum()
 
 fun secondPuzzle(freqs: Array<Int>): Int {
     var currentFreq = 0
-    val freqReachedList: MutableList<Int> = mutableListOf()
+    val freqReachedSet: MutableSet<Int> = mutableSetOf()
     var i = 0
-    while (currentFreq !in freqReachedList) {
-        freqReachedList.add(currentFreq)
+    while (currentFreq !in freqReachedSet) {
+        freqReachedSet.add(currentFreq)
         currentFreq += freqs[i]
         i++
         if (i == freqs.size) {
